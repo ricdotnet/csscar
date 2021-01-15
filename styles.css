@@ -58,9 +58,6 @@ html, body {
     margin-top: 30px;
     position: absolute;
 }
-/*.car-body:hover {
-    animation: step-end;
-}*/
 .car-front-window {
     width: 45px;
     height: 25px;
