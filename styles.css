@@ -1,0 +1,248 @@
+/*
+    ricardo rocha
+    me@rrocha.uk
+*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: monospace, sans-serif;
+    font-size: 24px;
+}
+
+.container {
+    width: 800px;
+    margin: 400px auto 0 auto;
+    text-align: center;
+}
+
+/* car body */
+.car-body {
+    width: 250px;
+    height: 50px;
+    background-color: #808e9c;
+    animation: drive 1.5s infinite alternate;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -20px;
+}
+    .drive-forward {
+        animation: forward 5s infinite forwards;
+    }
+.car-body-top {
+    width: 100px;
+    height: 50px;
+    background-color: #808e9c;
+    margin-top: -35px;
+    margin-left: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+}
+.car-wheel-left {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.car-wheel-right {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-left: 180px;
+    margin-top: 30px;
+    position: absolute;
+}
+/*.car-body:hover {
+    animation: step-end;
+}*/
+.car-front-window {
+    width: 45px;
+    height: 25px;
+    background-color: #cad9de;
+    position: absolute;
+    border-top-right-radius: 15px;
+    margin-left: 125px;
+    margin-top: -30px;
+}
+
+/* smoke */
+.smoke-main {
+    width: 65px;
+    height: 45px;
+    /*background: linear-gradient(90deg, #d9dcde 0%, #000 100%);*/
+    background-color: #d4d4d4;
+    position: absolute;
+    border-radius: 50%;
+    animation: smoke 1s infinite alternate;
+    margin-left: -100px;
+}
+.smoke-bubble-1 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -10px;
+}
+.smoke-bubble-2 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: -10px;
+    position: absolute;
+}
+.smoke-bubble-3 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 35px;
+    margin-top: -5px;
+    position: absolute;
+}
+.smoke-bubble-4 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 45px;
+    margin-top: 10px;
+    position: absolute;
+}
+.smoke-bubble-5 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+}
+.smoke-bubble-6 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    position: absolute;
+}
+.smoke-bubble-7 {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 0px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+/* road */
+.road {
+    width: 100%;
+    height: 200px;
+    background-color: dimgrey;
+    margin-top: 35px;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+.divider-1 {
+    width: 100px;
+    height: 15px;
+    background-color: #fff;
+    margin-top: 85px;
+    position: absolute;
+    animation: move-1 1s infinite forwards;
+}
+.divider-2 {
+    width: 100px;
+    height: 15px;
+    background-color: #fff;
+    margin-top: 85px;
+    position: absolute;
+    animation: move-2 1s infinite forwards;
+}
+.divider-3 {
+    width: 100px;
+    height: 15px;
+    background-color: #fff;
+    margin-top: 85px;
+    animation: move-3 1s infinite forwards;
+}
+
+/* animations */
+@keyframes drive {
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        margin-top: -25px;
+    }
+    15%, 45%, 75% {
+        margin-top: -20px;
+    }
+}
+@keyframes forward {
+    0% { margin-left: 110px; }
+    15% { margin-left: 250px; }
+    55% { margin-left: 500px; }
+    100% { margin-left: 110px; }
+}
+
+@keyframes smoke {
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        margin-left: -95px;
+    }
+    15%, 45%, 75% {
+        margin-left: -100px;
+    }
+}
+
+@keyframes move-1 {
+    0% { margin-left: 200px; }
+    10% { margin-left: 170px; }
+    20% { margin-left: 140px; }
+    30% { margin-left: 110px; }
+    40% { margin-left: 80px; }
+    50% { margin-left: 50px; }
+    60% { margin-left: 20px; }
+    70% { margin-left: -10px; }
+    80% { margin-left: -40px; }
+    90% { margin-left: -70px; }
+    100% { margin-left: -100px; }
+}
+
+@keyframes move-2 {
+    0% { margin-left: 500px; }
+    10% { margin-left: 470px; }
+    20% { margin-left: 440px; }
+    30% { margin-left: 410px; }
+    40% { margin-left: 380px; }
+    50% { margin-left: 350px; }
+    60% { margin-left: 320px; }
+    70% { margin-left: 290px; }
+    80% { margin-left: 260px; }
+    90% { margin-left: 230px; }
+    100% { margin-left: 200px; }
+}
+
+@keyframes move-3 {
+    0% { margin-left: 800px; }
+    10% { margin-left: 770px; }
+    20% { margin-left: 740px; }
+    30% { margin-left: 710px; }
+    40% { margin-left: 680px; }
+    50% { margin-left: 650px; }
+    60% { margin-left: 620px; }
+    70% { margin-left: 590px; }
+    80% { margin-left: 560px; }
+    90% { margin-left: 530px; }
+    100% { margin-left: 500px; }
+}
+
