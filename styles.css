@@ -48,6 +48,7 @@ html, body {
     position: absolute;
     margin-top: 30px;
     margin-left: 20px;
+    animation: rotate 0.8s infinite forwards;
 }
 .car-wheel-right {
     width: 50px;
@@ -57,6 +58,14 @@ html, body {
     margin-left: 180px;
     margin-top: 30px;
     position: absolute;
+    animation: rotate 0.8s infinite forwards;
+}
+.car-wheel-interior1 {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5px 18px;
 }
 .car-front-window {
     width: 45px;
@@ -190,6 +199,20 @@ html, body {
     15% { margin-left: 250px; }
     55% { margin-left: 500px; }
     100% { margin-left: 110px; }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(36deg); }
+    20% { transform: rotate(72deg); }
+    30% { transform: rotate(108deg); }
+    40% { transform: rotate(144deg); }
+    50% { transform: rotate(180deg); }
+    60% { transform: rotate(216deg); }
+    70% { transform: rotate(252deg); }
+    80% { transform: rotate(288deg); }
+    90% { transform: rotate(324deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @keyframes smoke {
